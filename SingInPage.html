@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="./Estilos/SignInSyles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="singin-box">
+            <form id="form">
+                <h2>Registrate</h2>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
+                    <label for="UserName">Nombre de Usuario</label>
+                    <input type="text" required placeholder="Ingrese su usuario" id="username">
+                </div>
+
+                <div class="input-box">
+                    <i class="fa-solid fa-envelope"></i>
+                    <label for="email">Email</label>
+                    <input type="email" required placeholder="Ingrese su email" id="email">
+                </div>
+
+                
+                 <div class="input-box">
+                    <i class="fa-solid fa-key"></i>
+                    <label for="password" >Contraseña</label>
+                    <input type="password" required placeholder="Ingrese contraseña" id="password">
+                 </div>
+
+                 <button type="submit">Registrar cuenta</button>
+
+                 <div class="singin-link">
+                    <p><a href="./LoginPage.html">Regresar</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const myForm = document.getElementById("form");
+        const url = "https://673bf1c296b8dcd5f3f7f885.mockapi.io/Lugares"
+       
+       
+       
+        myForm.addEventListener("submit",() =>{
+         event.preventDefault();
+    
+            const formData= {
+                username: document.getElementById("username").value,
+                email: document.getElementById("email").value,
+                password: document.getElementById("password").value
+            }
+    
+            fetch(url, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formData)
+            }).then(res => res.json())
+              .then(data => console.log(data))
+              .then(error =>console.log(error))
+              .then(alert("Te has registrado exitosamente")) 
+            }
+            
+        )
+
+    </script>
+</body>
+</html>

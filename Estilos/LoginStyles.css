@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url(/Imagenes/Imagen-2.jpg) center;
+    background-size: cover;
+}
+
+.login-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background-color: transparent;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    backdrop-filter: blur(10px);
+}
+
+h2{
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+.input-box {
+    width: 310px;
+    margin: 30px 0;
+    color: white;
+    font-size: 1em; 
+}
+
+.input-box > input{
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 1em; 
+}
+
+.input-box > input::placeholder{
+    color: rgb(185, 183, 183);
+    font-size: .9em;
+}
+
+.remenber-forgot{
+    margin: -15px 0 15px;
+    font-size: .9em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remenber-forgot > label > input {
+    margin-right: 5px;
+}
+
+.remenber-forgot a {
+    color: white;
+    text-decoration: none;
+}
+
+.remenber-forgot a:hover{
+    text-decoration: underline;
+    color: aqua;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover{
+    background-color: rgb(194, 241, 226);
+}
+
+.register-link {
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    margin: 25px 0 15px;
+}
+
+.register-link p a {
+    color: white;
+    text-decoration: none;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+@media(max-width:340px){
+    .input-box{
+        width: 100%;
+        height: 100vh;
+    }
+}
+
