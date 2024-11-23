@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>Pagina de Inicio</title>
     <link rel="stylesheet" href="./Estilos/LandingPage.css">
 </head>
 <body>
@@ -12,24 +12,33 @@
             <img src="./Imagenes/Travel logo.png" alt="Logo">
         </div>
         <ul class="nav-links">
-            <li class="Home"><a href="">Inicio</a></li>
-            <li class="Login"><a href="/LoginPage.html">Iniciar Sesion</a></li>
-            <li class="About">Acerca del blog</li>
-            <li class="Contact">Contactenos</li>
+            <li class="Home" class="default">Inicio</li>
+            <li class="Login"><a href="/LoginPage.html" class="link">Iniciar Sesion</a></li>
+            <li class="Contact"><a href="/ContactUs.html" class="link">Contactenos</a></li>
         </ul>
     </nav>
 
     <header>
         <div class="container">
             <div class="header-container">
+                <br> <br> <br>
                 <h1 class="h-title">Viajes</h1>
-                <p class="h-subtitle">
-                    Descubre el mundo y vive la emocion del viaje. Desde relajantes escapadas en playas de ensueño hasta aventuras emocionantes en ciudades vibrantes y paisajes naturales impresionantes, hay un destino perfecto para ti. Explora, descubre y crea recuerdos inolvidables en un viaje que te cambiará la vida.
+                <p class="text">
+                    Descubre el mundo y vive la emocion del viaje. ¡Nuestra agencia te permite observar diferentes destinos!Desde relajantes escapadas en playas de ensueño hasta aventuras emocionantes en ciudades vibrantes y paisajes naturales impresionantes, hay un destino perfecto para ti. Explora, descubre y crea recuerdos inolvidables en un viaje que te cambiará la vida., ¡Solo en la agencia "Blog de viajes"
+                    <br><br>
+                    ¡Bienvenido al mundo de los viajes emocionantes! En nuestra agencia de viajes, nos apasiona ayudarte a descubrir nuevos destinos y crear recuerdos inolvidables con tu familia.
+                    Imagina poder explorar las playas de arena blanca de Cancún, descubrir la magia de Disney en Orlando, o relajarte en las aguas cristalinas de Bora Bora. ¡Todo es posible con nosotros!
                 </p>
-                <button id="btn">Leer mas</button>
             </div>
+            <div class="visitantes-box">
+                <span class="visitantes">0</span>
+                <button class="btn">Reiniciar visitas</button>
+            </div>
+            
+
         </div>
+        
     </header>
-    
+    <script src="/Visitas.js"></script>
 </body>
 </html>
